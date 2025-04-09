@@ -187,6 +187,57 @@ nav ul li a:hover::after{
     background: #ff004f;
     transform: translateY(-10px);
 }
+/* ----------- Currently Learning Section ----------- */
+#learning {
+    padding: 80px 0;
+    color: #fff;
+}
+
+#learning .sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.learning-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    
+}
+
+.learning-item {
+    background: #262626;
+    padding: 30px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.learning-item h3 {
+    font-size: 22px;
+    color: #ff004f;
+    margin-bottom: 15px;
+}
+
+.learning-item p {
+    font-size: 14px;
+    color: #ababab;
+    line-height: 1.6;
+}
+
+.learning-item:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+.learning-item:hover h3,
+.learning-item:hover p {
+    color: #fff;
+}
+
 /* -- ------------------Portfolio----------------- -- */
 #portfolio{
     padding: 50px 0;
