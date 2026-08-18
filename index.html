@@ -1,238 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/bdb907fd13.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Dip Bhattacharjee — CSE undergraduate and AI/ML research enthusiast." />
+  <title>Dip Bhattacharjee | AI/ML Research Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/bdb907fd13.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="./images/logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
-            </nav> 
-            <div class="header-text">
-                <p>Web Developer & System Support Learner</p>
-                <h1>Hi, I'm <span>Dip Bhattacharjee</span><br>From Bangladesh</h1>
-            </div>
-        </div>
-    </div>
-
-    <!-- -------------------About------------------- -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-coi-1">
-                    <img src="./images/user.png" alt="">
-                </div>
-                <div class="about-coi-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I am a Web Developer and Computer Science student with skills in ReactJS, JavaScript, C, C++, and Python. My experience includes freelance tutoring, project-based development, and mentoring in programming. I build robust, scalable applications and am committed to growth and high-quality work. I am currently expanding my knowledge in TypeScript, Zustand, and modern testing frameworks to match industry standards. Recognized with the Dean’s Award and Most Innovative Intern (2022), I am passionate about delivering value and working collaboratively in team environments.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Front-End Development</span><br>ReactJS, Next.js, JavaScript (ES6+), HTML5, CSS3</li>
-                            <li><span>Version Control</span><br>Git, GitHub</li>
-                            <li><span>Learning</span><br>TypeScript, Zustand, Jest, React Testing Library</li>
-                            <li><span>Soft Skills</span><br>Strong communicator, loyal, problem solver, team player</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Freelance Tutor</span><br>Programming & Problem-Solving</li>
-                            <li><span>Instructor</span><br>NextGen Coaching Center – Admission Preparation</li>
-                            <li><span>Intern Developer</span><br>Designed management systems with front-end technologies</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Aug 2023 - Present</span><br>BSc in Computer Science and Engineering, AIUB</li>
-                            <li><span>Jan 2020 - Mar 2022</span><br>HSC, Mohipal Government College</li>
-                            <li><span>Jan 2018 - Dec 2020</span><br>SSC, Batisa Secondary School</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-   <!-- -------------------Currently Learning------------------- -->
-   <div id="learning">
+  <header id="home" class="hero">
     <div class="container">
-        <h1 class="sub-title">Currently Learning</h1>
-        <div class="learning-items">
-            <div class="learning-item">
-                <h3>TypeScript</h3>
-                <p>Proficient in enhancing code quality and maintainability through the implementation of TypeScript's static typing system. I leverage TypeScript to catch errors early in the development process, improve code readability, and facilitate better collaboration on complex projects.</p>
-            </div>
-            <div class="learning-item">
-                <h3>Zustand</h3>
-                <p>Experienced in utilizing Zustand for simplified and efficient state management in React applications. I employ Zustand to create manageable and scalable state solutions with minimal boilerplate, leading to cleaner code and improved application performance.</p>
-            </div>
-            <div class="learning-item">
-                <h3>React Testing Library & Jest</h3>
-                <p>Skilled in writing comprehensive and effective unit and integration tests for React applications using React Testing Library and Jest. I focus on creating testable and maintainable UI components, ensuring code reliability and a robust user experience through thorough testing practices.</p>
-            </div>
-            <div class="learning-item">
-                <h3>System Troubleshooting</h3>
-                <p>Adept at diagnosing and resolving real-world technical issues across various systems. My experience includes identifying root causes, implementing effective solutions, and ensuring system stability and optimal performance. I possess a methodical approach to problem-solving and a commitment to delivering timely resolutions.</p>
-            </div>
-        </div>
-    </div>
-</div>
+      <nav aria-label="Primary navigation">
+        <a href="#home" class="brand"><img src="./images/logo.png" class="logo" alt="Dip Bhattacharjee logo" /></a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+        <ul id="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-
-    <!-- --------------services------------ -->
-     <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Crafting engaging and user-centric digital experiences through strategic web design. I specialize in creating visually appealing and highly functional websites that not only reflect your brand identity but also drive results. My approach integrates aesthetics with seamless navigation and responsive layouts, ensuring optimal performance across all devices.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>I am passionate about creating intuitive and delightful user experiences through thoughtful UI/UX design. My process involves in-depth user research, wireframing, prototyping, and meticulous attention to detail in visual design. I focus on understanding user needs and business goals to develop interfaces that are both aesthetically pleasing and highly effective, leading to increased user satisfaction and engagement.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Developing innovative and user-friendly mobile applications that provide seamless and engaging experiences. I combine strategic thinking with creative design to build intuitive interfaces and robust functionalities for iOS and Android platforms. My focus is on creating apps that are not only visually appealing but also highly usable, accessible, and aligned with your specific objectives and target audience.</p>
-                    <a href="#">Learn more</a>
-                </div>
-
-
-            </div>
-        </div>
-     </div>
-     <!-- ------------------Portfolio----------------- -->
-      <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="./images/work-1.png" alt="">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Design and development of a social media app for iOS and Android</p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./images/work-2.png" alt="">
-                    <div class="layer">
-                        <h3>Music App</h3>
-                        <p>Design and development of a social media app for iOS and Android</p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./images/work-3.png" alt="">
-                    <div class="layer">
-                        <h3>Online Shoping App</h3>
-                        <p>Design and development of a social media app for iOS and Android</p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">See more</a>
+      <div class="hero-content">
+        <p class="eyebrow">Computer Science & Engineering Undergraduate</p>
+        <h1>Building practical <span>AI/ML</span><br />solutions through research.</h1>
+        <p class="hero-copy">I am Dip Bhattacharjee, an AI/ML research enthusiast focused on machine learning, NLP, computer vision, and intelligent systems.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#research">Explore my research</a>
+          <a class="btn btn-outline" href="./images/cv.pdf" download>Download CV <i class="fa-solid fa-arrow-down"></i></a>
         </div>
       </div>
-      <!-- ----------------------contact-------------------- -->
-       <div id="contact">
-        <div class="container">
-            <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> dipjee678@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> +8801855287594</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/bhattacharjee.dip.368588"><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/dip-bhattacharjee-212782354/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </header>
 
-                </div>
-                <a href="./images/my-cv.pdf" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Name" required>
-                    <input type="email" name="Email" placeholder="Your Email">
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+  <main>
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-image"><img src="./images/user.png" alt="Dip Bhattacharjee" /></div>
+        <div>
+          <p class="section-kicker">About me</p>
+          <h2>Research-driven computer science student.</h2>
+          <p>I am a Computer Science and Engineering undergraduate at American International University-Bangladesh, majoring in Computational Theory. I enjoy turning data and research ideas into useful, well-structured software and AI/ML solutions.</p>
+          <p>My academic and project work spans machine learning, natural language processing, deep learning fundamentals, data analysis, and object-oriented programming. I am especially interested in explainable AI, medical image analysis, computer vision, and IoT-enabled intelligent systems.</p>
+          <div class="quick-facts">
+            <div><strong>3.82 / 4.00</strong><span>Current CGPA</span></div>
+            <div><strong>2023–Present</strong><span>BSc in CSE, AIUB</span></div>
+            <div><strong>2</strong><span>Accepted IEEE papers</span></div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section id="research" class="section section-alt">
+      <div class="container">
+        <p class="section-kicker">Research & conferences</p>
+        <h2>Current research contributions</h2>
+        <div class="research-grid">
+          <article class="research-card">
+            <div class="card-icon"><i class="fa-solid fa-microscope"></i></div>
+            <p class="status">Accepted for presentation · SPICSCON 2026</p>
+            <h3>Progressive Two-Stage Transfer Learning with Dual Imbalance Compensation for Interpretable Enamel Caries Classification</h3>
+            <p>Research focused on transfer learning, class imbalance compensation, medical image classification, and interpretable AI.</p>
+          </article>
+          <article class="research-card">
+            <div class="card-icon"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+            <p class="status">Accepted for presentation · IEEE TENSYMP 2026</p>
+            <h3>Development of a Cloud-Linked Low-Cost Machine Learning-Enabled Weather Monitoring System</h3>
+            <p>An intelligent systems research project combining cloud connectivity, low-cost monitoring hardware, and machine learning.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="section-kicker">Technical toolkit</p>
+        <h2>Skills that support my work</h2>
+        <div class="skills-grid">
+          <article><i class="fa-solid fa-code"></i><h3>Programming</h3><p>Python, C, C++, Java, C#, JavaScript</p></article>
+          <article><i class="fa-solid fa-brain"></i><h3>AI & Machine Learning</h3><p>Machine learning, transfer learning, classification, model training and evaluation</p></article>
+          <article><i class="fa-solid fa-language"></i><h3>Natural Language Processing</h3><p>Text preprocessing, text classification, feature extraction, language processing concepts</p></article>
+          <article><i class="fa-solid fa-database"></i><h3>Data & Core CS</h3><p>Data preprocessing, class imbalance handling, DSA, graph theory, OOP, problem solving</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <p class="section-kicker">Selected projects</p>
+        <h2>Software projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="./images/work-1.png" alt="Hospital management system project" />
+            <div class="project-content"><span>Java · OOP</span><h3>Hospital Management System</h3><p>A structured application supporting patient records, appointments, billing, and staff management using object-oriented Java design.</p></div>
+          </article>
+          <article class="project-card">
+            <img src="./images/work-2.png" alt="Poultry farm management system project" />
+            <div class="project-content"><span>Java · Database</span><h3>Poultry Farm Management System</h3><p>A database-driven system for organizing poultry-farm information, storage, management, and day-to-day operations.</p></div>
+          </article>
+          <article class="project-card">
+            <img src="./images/work-3.png" alt="AI and machine learning research interests" />
+            <div class="project-content"><span>AI/ML · Research</span><h3>Applied Intelligent Systems</h3><p>Ongoing work and learning in machine learning, deep learning, NLP, computer vision, explainable AI, and IoT systems.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container two-column">
+        <div>
+          <p class="section-kicker">Experience</p>
+          <h2>Teaching and mentoring</h2>
+          <div class="timeline">
+            <article><span class="timeline-dot"></span><p class="timeline-title">Instructor <small>· NextGen Coaching Center for Admission Preparation</small></p><p>Taught key admission-preparation subjects, created mock tests and quizzes, and mentored students individually to improve confidence and problem-solving ability.</p></article>
+            <article><span class="timeline-dot"></span><p class="timeline-title">Freelance Tutor <small>· Programming & Problem Solving</small></p><p>Mentored students in Python, JavaScript, and C++; created personalized plans covering programming fundamentals, algorithms, data structures, and project-based learning.</p></article>
+          </div>
+        </div>
+        <div class="education-panel">
+          <p class="section-kicker">Education & recognition</p>
+          <h2>Academic foundation</h2>
+          <article><h3>BSc in Computer Science & Engineering</h3><p>American International University-Bangladesh · Aug 2023–Present</p><strong>CGPA: 3.82 / 4.00 · Major: Computational Theory</strong></article>
+          <article><h3>Higher Secondary Certificate — Science</h3><p>Mohipal Government College · 2020–2022</p><strong>GPA: 4.89 / 5.00</strong></article>
+          <article><h3>Achievement</h3><p><strong>Dean’s Award</strong></p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container contact-grid">
+      <div><p class="section-kicker">Get in touch</p><h2>Let’s collaborate on an AI/ML project.</h2><p>I am open to research collaboration, learning opportunities, and meaningful technical projects.</p></div>
+      <div class="contact-links">
+        <a href="mailto:dip.my.business@gmail.com"><i class="fa-solid fa-envelope"></i> dip.my.business@gmail.com</a>
+        <a href="https://dipjee678.github.io/2nd-Protfolio/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> dipjee678.github.io</a>
+        <a href="https://www.linkedin.com/in/dip-bhattacharjee-212782354" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="https://www.facebook.com/bhattacharjee.dip.368588" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i> Facebook</a>
+      </div>
     </div>
-    <div class="copyright">
-        <p>Copyright © Dip. <i class="fa-solid fa-heart"></i></p>
-    </div>
-       </div>
-     
-    <script>
+    <div class="copyright">© <span id="year"></span> Dip Bhattacharjee. Built for AI/ML research and software projects.</div>
+  </footer>
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyX6ZaiEmgg_jMRl1e5Mwq-6zziT-tVcRcdS1erFg-wqqVhrMuHqE4JvukHVZRm0Ces/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg= document.getElementById("msg")
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {msg.innerHTML="Message Sent Successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('#nav-menu');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+      toggle.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+    });
+    document.querySelectorAll('#nav-menu a').forEach(link => link.addEventListener('click', () => {
+      menu.classList.remove('open'); toggle.setAttribute('aria-expanded', false); toggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }));
+    document.querySelector('#year').textContent = new Date().getFullYear();
+  </script>
 </body>
-</html
+</html>
