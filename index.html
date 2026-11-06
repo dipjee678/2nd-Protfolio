@@ -3,157 +3,417 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Dip Bhattacharjee — CSE undergraduate and AI/ML research enthusiast." />
-  <title>Dip Bhattacharjee | AI/ML Research Portfolio</title>
+  <title>Dip Bhattacharjee — ML Research & Software</title>
+  <meta name="description" content="Dip Bhattacharjee — CSE undergraduate at AIUB working on machine learning, explainable AI, medical imaging and intelligent IoT. Three IEEE conference papers accepted in 2026." />
+  <meta name="author" content="Dip Bhattacharjee" />
+  <meta property="og:title" content="Dip Bhattacharjee — ML Research & Software" />
+  <meta property="og:description" content="Machine learning systems that are accurate, interpretable, and genuinely useful." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="profile-alt.jpeg" />
+  <meta name="theme-color" content="#f3efe6" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#14130f" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1813'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-style='italic' text-anchor='middle' fill='%23f3efe6'%3Edb%3C/text%3E%3Ccircle cx='50' cy='16' r='5' fill='%23c8411b'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/bdb907fd13.js" crossorigin="anonymous"></script>
+  <script>
+    try { var t = localStorage.getItem('db-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
 </head>
 <body>
-  <header id="home" class="hero">
-    <div class="container">
-      <nav aria-label="Primary navigation">
-        <a href="#home" class="brand"><img src="./images/logo.png" class="logo" alt="Dip Bhattacharjee logo" /></a>
-        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
-        <ul id="nav-menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <a class="monogram" href="#top" aria-label="Dip Bhattacharjee, back to top">
+        <span class="mono-mark">db<i></i></span>
+        <span class="mono-name">Dip Bhattacharjee</span>
+      </a>
+
+      <nav class="toc" aria-label="Sections">
+        <button class="toc-toggle" type="button" aria-expanded="false" aria-controls="toc-list">
+          <span class="mono">Contents</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        </button>
+        <ol id="toc-list" class="toc-list">
+          <li><a href="#introduction"><span>1</span>Introduction</a></li>
+          <li><a href="#publications"><span>2</span>Publications</a></li>
+          <li><a href="#projects"><span>3</span>Projects</a></li>
+          <li><a href="#methods"><span>4</span>Methods</a></li>
+          <li><a href="#background"><span>5</span>Background</a></li>
+          <li><a href="#correspondence"><span>6</span>Contact</a></li>
+        </ol>
       </nav>
 
-      <div class="hero-content">
-        <p class="eyebrow">Computer Science & Engineering Undergraduate</p>
-        <h1>Building practical <span>AI/ML</span><br />solutions through research.</h1>
-        <p class="hero-copy">I am Dip Bhattacharjee, an AI/ML research enthusiast focused on machine learning, NLP, computer vision, and intelligent systems.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#research">Explore my research</a>
-          <a class="btn btn-outline" href="./cv.pdf" download>Download CV <i class="fa-solid fa-arrow-down"></i></a>
-        </div>
-      </div>
+      <button class="theme-toggle" type="button" aria-label="Switch colour theme">
+        <svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
     </div>
   </header>
 
-  <main>
-    <section id="about" class="section">
-      <div class="container about-grid">
-        <div class="about-image"><img src="./images/user.png" alt="Dip Bhattacharjee" /></div>
-        <div>
-          <p class="section-kicker">About me</p>
-          <h2>Research-driven computer science student.</h2>
-          <p>I am a Computer Science and Engineering undergraduate at American International University-Bangladesh, majoring in Computational Theory. I enjoy turning data and research ideas into useful, well-structured software and AI/ML solutions.</p>
-          <p>My academic and project work spans machine learning, natural language processing, deep learning fundamentals, data analysis, and object-oriented programming. I am especially interested in explainable AI, medical image analysis, computer vision, and IoT-enabled intelligent systems.</p>
-          <div class="quick-facts">
-            <div><strong>3.82 / 4.00</strong><span>Current CGPA</span></div>
-            <div><strong>2023–Present</strong><span>BSc in CSE, AIUB</span></div>
-            <div><strong>2</strong><span>Accepted IEEE papers</span></div>
+  <main id="main">
+    <!-- ============ TITLE PAGE ============ -->
+    <section class="title-page" id="top" aria-labelledby="name">
+      <div class="wrap">
+        <p class="runhead mono">
+          <span>Portfolio</span><span>cs.LG · cs.CV · cs.CL</span><span>Rev. <span class="js-year">2026</span></span>
+        </p>
+
+        <div class="title-grid">
+          <div class="title-copy">
+            <p class="status"><span class="dot" aria-hidden="true"></span>Open to research collaboration &amp; internships</p>
+            <h1 id="name">Dip<br />Bhattacharjee</h1>
+            <p class="subtitle">On building machine learning systems that are <em>accurate</em>, <em>interpretable</em>, and genuinely <em>useful</em>.</p>
+            <p class="affiliation">
+              Department of Computer Science &amp; Engineering<br />
+              American International University–Bangladesh (AIUB)<br />
+              <a href="mailto:dip.my.business@gmail.com" class="mono">dip.my.business@gmail.com</a>
+            </p>
+
+            <div class="abstract">
+              <h2 class="abstract-label">Abstract</h2>
+              <p>I am a CSE undergraduate at AIUB majoring in Computational Theory. My work sits where machine learning meets the messy real world: medical image analysis, natural language processing, explainable AI, and low-cost intelligent IoT. In 2026, three of my papers were accepted at IEEE conferences. I am most drawn to problems where a model has to be right <em>and</em> be able to show why.</p>
+              <p class="keywords"><strong>Keywords</strong> — machine learning, transfer learning, explainable AI, medical imaging, NLP, IoT, Monte Carlo methods</p>
+            </div>
+
+            <div class="actions">
+              <a class="btn btn-ink" href="#publications">Read the papers <span aria-hidden="true">→</span></a>
+              <a class="btn btn-line" href="cv.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+
+          <figure class="portrait">
+            <div class="portrait-frame">
+              <img src="profile-alt.jpeg" alt="Dip Bhattacharjee in a blue blazer, standing outdoors among plants" width="1086" height="1448" fetchpriority="high" />
+              <span class="crop tl" aria-hidden="true"></span><span class="crop tr" aria-hidden="true"></span>
+              <span class="crop bl" aria-hidden="true"></span><span class="crop br" aria-hidden="true"></span>
+            </div>
+            <figcaption><b>Fig. 1.</b> The author. Undergraduate researcher, CSE, AIUB.</figcaption>
+          </figure>
+        </div>
+
+        <figure class="table-fig stats" aria-label="Summary statistics">
+          <figcaption class="mono"><b>Table 1.</b> Summary statistics</figcaption>
+          <dl>
+            <div><dt>Accepted IEEE papers</dt><dd><span class="count" data-to="3">3</span></dd></div>
+            <div><dt>Current CGPA (of 4.00)</dt><dd><span class="count" data-to="3.83" data-dec="2">3.83</span></dd></div>
+            <div><dt>Dean’s Award</dt><dd>✓</dd></div>
+            <div><dt>Students mentored</dt><dd>1:1</dd></div>
+          </dl>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 1. INTRODUCTION ============ -->
+    <section class="sec" id="introduction" aria-labelledby="h-intro">
+      <div class="wrap sec-grid">
+        <header class="sec-head">
+          <span class="sec-no">§1</span>
+          <h2 id="h-intro">Introduction</h2>
+        </header>
+
+        <div class="sec-body prose">
+          <p class="lede">Most of my favourite problems start with a dataset that is too small, too imbalanced, or too noisy, and a person on the other end who needs to trust the answer.</p>
+
+          <div class="with-note">
+            <p>I study Computer Science &amp; Engineering at <strong>American International University–Bangladesh</strong>, majoring in <strong>Computational Theory</strong>. That gives me a foundation in machine learning, NLP, graph theory, data structures &amp; algorithms, object-oriented programming, and discrete mathematics: the theory under the tools.</p>
+            <aside class="sidenote"><span class="mono">Note 1</span>Coursework: Machine Learning, NLP, Graph Theory, DSA, OOP, C++, Discrete Mathematics.</aside>
+          </div>
+
+          <div class="with-note">
+            <p>My research moves between <strong>medical image analysis</strong> (classifying enamel caries with transfer learning that copes with heavy class imbalance), <strong>intelligent sensing</strong> (a cloud-linked, low-cost weather station that forecasts with ML), and <strong>quantitative risk</strong> (Monte Carlo estimation guided by GARCH-family diagnostics).</p>
+            <aside class="sidenote"><span class="mono">Note 2</span>The common thread: make the model honest about its uncertainty, and make its reasoning inspectable.</aside>
+          </div>
+
+          <p>In summary, I contribute:</p>
+          <ol class="contrib">
+            <li><strong>Research rigour.</strong> I take ideas through to peer-reviewed work, with three IEEE papers accepted in 2026.</li>
+            <li><strong>Engineering follow-through.</strong> I build systems people can use, from Java desktop applications to ML-enabled IoT hardware.</li>
+            <li><strong>Clear teaching.</strong> As an instructor and tutor, I have learned to explain hard ideas simply, a skill that carries over directly to writing papers.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Interactive figure -->
+      <div class="wrap">
+        <figure class="nn-fig" id="fig-nn">
+          <div class="nn-toolbar">
+            <div class="seg" role="group" aria-label="Class to place on click">
+              <button type="button" class="seg-btn is-on" data-cls="0"><i class="sw sw-a"></i>Class A</button>
+              <button type="button" class="seg-btn" data-cls="1"><i class="sw sw-b"></i>Class B</button>
+            </div>
+            <div class="seg" role="group" aria-label="Load a dataset">
+              <button type="button" class="seg-btn" data-set="moons">Moons</button>
+              <button type="button" class="seg-btn" data-set="rings">Rings</button>
+              <button type="button" class="seg-btn" data-set="xor">XOR</button>
+              <button type="button" class="seg-btn" data-set="clear">Clear</button>
+            </div>
+            <div class="seg" role="group" aria-label="Training controls">
+              <button type="button" class="seg-btn" id="nn-play" aria-pressed="true">Pause</button>
+              <button type="button" class="seg-btn" id="nn-reset">Re-init</button>
+            </div>
+          </div>
+          <div class="nn-stage">
+            <canvas id="nn-canvas" aria-label="Interactive plot: a small neural network learning to separate two classes of points. Click to add points." role="img"></canvas>
+            <div class="nn-readout mono" aria-live="off">
+              <span>epoch <b id="nn-epoch">0</b></span>
+              <span>loss <b id="nn-loss">—</b></span>
+              <span>acc <b id="nn-acc">—</b></span>
+            </div>
+          </div>
+          <figcaption><b>Fig. 2.</b> A 2–16–1 multilayer perceptron with tanh units, trained live in your browser by full-batch gradient descent with momentum. Shading shows the predicted class and its confidence. <em>Click to add a point; shift-click or right-click adds the other class.</em> About 150 lines of plain JavaScript, no libraries.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 2. PUBLICATIONS ============ -->
+    <section class="sec" id="publications" aria-labelledby="h-pubs">
+      <div class="wrap sec-grid">
+        <header class="sec-head">
+          <span class="sec-no">§2</span>
+          <h2 id="h-pubs">Publications</h2>
+          <p class="sec-sub">Peer-reviewed conference papers, 2026.</p>
+        </header>
+
+        <div class="sec-body">
+          <ol class="refs">
+            <li class="ref" data-bib="@inproceedings{bhattacharjee2026caries,
+  title     = {Progressive Two-Stage Transfer Learning with Dual Imbalance Compensation for Interpretable Enamel Caries Classification},
+  author    = {Bhattacharjee, Dip and others},
+  booktitle = {5th IEEE International Conference on Signal Processing, Information, Communication and Systems (SPICSCON)},
+  year      = {2026},
+  note      = {Accepted}
+}">
+              <span class="ref-no mono">[1]</span>
+              <div class="ref-body">
+                <p class="ref-meta mono"><span class="pill pill-accent">Accepted</span><span>5th IEEE SPICSCON · 2026</span></p>
+                <h3>Progressive Two-Stage Transfer Learning with Dual Imbalance Compensation for Interpretable Enamel Caries Classification</h3>
+                <p class="ref-sum">Classifies early dental caries from images by fine-tuning in two stages and correcting class imbalance at both the data and loss level, with explainability so that clinicians can see <em>where</em> the model looked.</p>
+                <p class="ref-tags mono">transfer learning · XAI · medical imaging · class imbalance</p>
+                <div class="ref-actions"><button class="link-btn js-cite" type="button">Cite</button></div>
+              </div>
+            </li>
+
+            <li class="ref" data-bib="@inproceedings{bhattacharjee2026weather,
+  title     = {Development of a Cloud-Linked Low-Cost Machine Learning-Enabled Weather Monitoring System},
+  author    = {Bhattacharjee, Dip and others},
+  booktitle = {IEEE Region 10 Symposium (TENSYMP)},
+  year      = {2026},
+  doi       = {10.1109/TENSYMP68909.2026.11704037}
+}">
+              <span class="ref-no mono">[2]</span>
+              <div class="ref-body">
+                <p class="ref-meta mono"><span class="pill pill-ok">Published</span><span>IEEE TENSYMP · 2026</span></p>
+                <h3><a href="https://doi.org/10.1109/TENSYMP68909.2026.11704037" target="_blank" rel="noopener noreferrer">Development of a Cloud-Linked Low-Cost Machine Learning-Enabled Weather Monitoring System</a></h3>
+                <p class="ref-sum">Low-cost sensors, cloud telemetry, and an ML model combined into an affordable weather station that monitors and predicts conditions where commercial equipment is out of reach.</p>
+                <p class="ref-tags mono">machine learning · IoT · cloud · embedded sensing</p>
+                <div class="ref-actions">
+                  <a class="link-btn" href="https://doi.org/10.1109/TENSYMP68909.2026.11704037" target="_blank" rel="noopener noreferrer">DOI ↗</a>
+                  <button class="link-btn js-cite" type="button">Cite</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="ref" data-bib="@inproceedings{bhattacharjee2026risk,
+  title     = {Diagnostic-Guided Monte Carlo Risk Estimation Using GARCH, EGARCH, and Bootstrap Models},
+  author    = {Bhattacharjee, Dip and others},
+  booktitle = {3rd IEEE International Conference on Computing, Applications and Systems (COMPAS)},
+  year      = {2026},
+  note      = {Accepted}
+}">
+              <span class="ref-no mono">[3]</span>
+              <div class="ref-body">
+                <p class="ref-meta mono"><span class="pill pill-accent">Accepted</span><span>3rd IEEE COMPAS · 2026</span></p>
+                <h3>Diagnostic-Guided Monte Carlo Risk Estimation Using GARCH, EGARCH, and Bootstrap Models</h3>
+                <p class="ref-sum">Uses statistical diagnostics to choose between volatility models (GARCH, EGARCH) and bootstrap resampling, then runs Monte Carlo simulation to give risk estimates that fit the data they come from.</p>
+                <p class="ref-tags mono">Monte Carlo · GARCH · EGARCH · bootstrap · risk</p>
+                <div class="ref-actions"><button class="link-btn js-cite" type="button">Cite</button></div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. PROJECTS ============ -->
+    <section class="sec" id="projects" aria-labelledby="h-proj">
+      <div class="wrap sec-grid">
+        <header class="sec-head">
+          <span class="sec-no">§3</span>
+          <h2 id="h-proj">Projects</h2>
+          <p class="sec-sub">Software I have designed and built end to end.</p>
+        </header>
+
+        <div class="sec-body projects">
+          <article class="proj">
+            <div class="proj-head">
+              <span class="proj-no mono">A.1</span>
+              <h3>Hospital Management System</h3>
+            </div>
+            <dl class="spec">
+              <div><dt>Problem</dt><dd>Patient records, appointments, billing and staff are tracked separately and inconsistently.</dd></div>
+              <div><dt>Approach</dt><dd>A modular object-oriented design, with each area (patients, scheduling, billing, staff) as its own set of classes behind clean interfaces.</dd></div>
+              <div><dt>Stack</dt><dd class="mono">Java · OOP · system design</dd></div>
+            </dl>
+          </article>
+
+          <article class="proj">
+            <div class="proj-head">
+              <span class="proj-no mono">A.2</span>
+              <h3>Poultry Farm Management System</h3>
+            </div>
+            <dl class="spec">
+              <div><dt>Problem</dt><dd>Farm records and day-to-day operational data live on paper and are hard to query.</dd></div>
+              <div><dt>Approach</dt><dd>A database-backed application with structured storage and full create/read/update/delete workflows for daily operations.</dd></div>
+              <div><dt>Stack</dt><dd class="mono">Java · relational DB · CRUD</dd></div>
+            </dl>
+          </article>
+
+          <article class="proj">
+            <div class="proj-head">
+              <span class="proj-no mono">A.3</span>
+              <h3>Live Neural-Network Playground</h3>
+            </div>
+            <dl class="spec">
+              <div><dt>Problem</dt><dd>Decision boundaries are easier to understand when you can see them, and change them.</dd></div>
+              <div><dt>Approach</dt><dd>A from-scratch MLP with hand-written backpropagation, rendered as a live confidence field. It is the figure in §1.</dd></div>
+              <div><dt>Stack</dt><dd class="mono">JavaScript · Canvas · backprop</dd></div>
+            </dl>
+            <a class="link-btn" href="#fig-nn">See Fig. 2 ↑</a>
+          </article>
+
+          <p class="more"><a href="https://github.com/dipjee678" target="_blank" rel="noopener noreferrer">More code on GitHub <span aria-hidden="true">↗</span></a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. METHODS ============ -->
+    <section class="sec" id="methods" aria-labelledby="h-methods">
+      <div class="wrap sec-grid">
+        <header class="sec-head">
+          <span class="sec-no">§4</span>
+          <h2 id="h-methods">Methods &amp; tools</h2>
+          <p class="sec-sub">The toolkit behind the work above.</p>
+        </header>
+
+        <div class="sec-body">
+          <figure class="table-fig">
+            <figcaption class="mono"><b>Table 2.</b> Technical toolkit by area</figcaption>
+            <table class="tools">
+              <tbody>
+                <tr><th scope="row">Languages</th><td>Python, C, C++, Java, C#, JavaScript</td></tr>
+                <tr><th scope="row">Machine learning</th><td>Deep learning, transfer learning, classification, model evaluation, class-imbalance handling</td></tr>
+                <tr><th scope="row">NLP &amp; data</th><td>Text preprocessing, text classification, feature extraction, data analysis</td></tr>
+                <tr><th scope="row">Vision &amp; XAI</th><td>Computer vision, medical image analysis, explainable AI</td></tr>
+                <tr><th scope="row">Statistics</th><td>Monte Carlo simulation, GARCH / EGARCH, bootstrap methods</td></tr>
+                <tr><th scope="row">Foundations</th><td>Data structures &amp; algorithms, graph theory, OOP, discrete mathematics</td></tr>
+                <tr><th scope="row">Systems</th><td>IoT sensing, cloud integration, databases</td></tr>
+                <tr><th scope="row">Tools</th><td>Git &amp; GitHub, Adobe Photoshop, AutoCAD, Microsoft Office</td></tr>
+                <tr><th scope="row">Spoken languages</th><td>Bangla (native), English (fluent), Hindi (good listening, basic speaking)</td></tr>
+              </tbody>
+            </table>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. BACKGROUND ============ -->
+    <section class="sec" id="background" aria-labelledby="h-bg">
+      <div class="wrap sec-grid">
+        <header class="sec-head">
+          <span class="sec-no">§5</span>
+          <h2 id="h-bg">Background</h2>
+          <p class="sec-sub">Education and teaching.</p>
+        </header>
+
+        <div class="sec-body bg-cols">
+          <div>
+            <h3 class="sub">5.1 Education</h3>
+            <ol class="cv">
+              <li>
+                <span class="cv-when mono">2023 – now</span>
+                <div>
+                  <h4>BSc, Computer Science &amp; Engineering</h4>
+                  <p>American International University–Bangladesh</p>
+                  <p class="cv-note mono">CGPA 3.83 / 4.00 · Major: Computational Theory · Dean’s Award</p>
+                </div>
+              </li>
+              <li>
+                <span class="cv-when mono">2020 – 22</span>
+                <div>
+                  <h4>Higher Secondary Certificate, Science</h4>
+                  <p>Mohipal Government College</p>
+                  <p class="cv-note mono">GPA 4.89 / 5.00</p>
+                </div>
+              </li>
+              <li>
+                <span class="cv-when mono">2018 – 20</span>
+                <div>
+                  <h4>Secondary School Certificate, Science</h4>
+                  <p>Batisa Secondary School</p>
+                  <p class="cv-note mono">GPA 4.89 / 5.00</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3 class="sub">5.2 Teaching</h3>
+            <ol class="cv">
+              <li>
+                <span class="cv-when mono">Instructor</span>
+                <div>
+                  <h4>NextGen Coaching Center</h4>
+                  <p>Taught core admission-preparation subjects, wrote mock tests and quizzes, and mentored students one to one on concepts, accuracy, and confidence.</p>
+                </div>
+              </li>
+              <li>
+                <span class="cv-when mono">Freelance</span>
+                <div>
+                  <h4>Programming tutor</h4>
+                  <p>Built personalised learning plans in Python, JavaScript and C++, from fundamentals through data structures, algorithms, and first real projects.</p>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="research" class="section section-alt">
-      <div class="container">
-        <p class="section-kicker">Research & conferences</p>
-        <h2>Current research contributions</h2>
-        <div class="research-grid">
-          <article class="research-card">
-            <div class="card-icon"><i class="fa-solid fa-microscope"></i></div>
-            <p class="status">Accepted for presentation · SPICSCON 2026</p>
-            <h3>Progressive Two-Stage Transfer Learning with Dual Imbalance Compensation for Interpretable Enamel Caries Classification</h3>
-            <p>Research focused on transfer learning, class imbalance compensation, medical image classification, and interpretable AI.</p>
-          </article>
-          <article class="research-card">
-            <div class="card-icon"><i class="fa-solid fa-cloud-sun-rain"></i></div>
-            <p class="status">Accepted for presentation · IEEE TENSYMP 2026</p>
-            <h3>Development of a Cloud-Linked Low-Cost Machine Learning-Enabled Weather Monitoring System</h3>
-            <p>An intelligent systems research project combining cloud connectivity, low-cost monitoring hardware, and machine learning.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+    <!-- ============ 6. CORRESPONDENCE ============ -->
+    <section class="sec correspondence" id="correspondence" aria-labelledby="h-contact">
+      <div class="wrap">
+        <p class="sec-no">§6 · Correspondence</p>
+        <h2 id="h-contact">Have a problem worth modelling? <em>Let’s talk.</em></h2>
+        <p class="contact-lede">I’m open to research collaborations, internships, and ambitious software or ML projects. I usually reply within a day or two.</p>
 
-    <section id="skills" class="section">
-      <div class="container">
-        <p class="section-kicker">Technical toolkit</p>
-        <h2>Skills that support my work</h2>
-        <div class="skills-grid">
-          <article><i class="fa-solid fa-code"></i><h3>Programming</h3><p>Python, C, C++, Java, C#, JavaScript</p></article>
-          <article><i class="fa-solid fa-brain"></i><h3>AI & Machine Learning</h3><p>Machine learning, transfer learning, classification, model training and evaluation</p></article>
-          <article><i class="fa-solid fa-language"></i><h3>Natural Language Processing</h3><p>Text preprocessing, text classification, feature extraction, language processing concepts</p></article>
-          <article><i class="fa-solid fa-database"></i><h3>Data & Core CS</h3><p>Data preprocessing, class imbalance handling, DSA, graph theory, OOP, problem solving</p></article>
+        <div class="contact-row">
+          <a class="email" href="mailto:dip.my.business@gmail.com">dip.my.business@gmail.com</a>
+          <button class="link-btn js-copy-email" type="button" data-email="dip.my.business@gmail.com">Copy</button>
         </div>
-      </div>
-    </section>
 
-    <section id="projects" class="section section-alt">
-      <div class="container">
-        <p class="section-kicker">Selected projects</p>
-        <h2>Software projects</h2>
-        <div class="project-grid">
-          <article class="project-card">
-            <img src="./images/work-1.png" alt="Hospital management system project" />
-            <div class="project-content"><span>Java · OOP</span><h3>Hospital Management System</h3><p>A structured application supporting patient records, appointments, billing, and staff management using object-oriented Java design.</p></div>
-          </article>
-          <article class="project-card">
-            <img src="./images/work-2.png" alt="Poultry farm management system project" />
-            <div class="project-content"><span>Java · Database</span><h3>Poultry Farm Management System</h3><p>A database-driven system for organizing poultry-farm information, storage, management, and day-to-day operations.</p></div>
-          </article>
-          <article class="project-card">
-            <img src="./images/work-3.png" alt="AI and machine learning research interests" />
-            <div class="project-content"><span>AI/ML · Research</span><h3>Applied Intelligent Systems</h3><p>Ongoing work and learning in machine learning, deep learning, NLP, computer vision, explainable AI, and IoT systems.</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="container two-column">
-        <div>
-          <p class="section-kicker">Experience</p>
-          <h2>Teaching and mentoring</h2>
-          <div class="timeline">
-            <article><span class="timeline-dot"></span><p class="timeline-title">Instructor <small>· NextGen Coaching Center for Admission Preparation</small></p><p>Taught key admission-preparation subjects, created mock tests and quizzes, and mentored students individually to improve confidence and problem-solving ability.</p></article>
-            <article><span class="timeline-dot"></span><p class="timeline-title">Freelance Tutor <small>· Programming & Problem Solving</small></p><p>Mentored students in Python, JavaScript, and C++; created personalized plans covering programming fundamentals, algorithms, data structures, and project-based learning.</p></article>
-          </div>
-        </div>
-        <div class="education-panel">
-          <p class="section-kicker">Education & recognition</p>
-          <h2>Academic foundation</h2>
-          <article><h3>BSc in Computer Science & Engineering</h3><p>American International University-Bangladesh · Aug 2023–Present</p><strong>CGPA: 3.82 / 4.00 · Major: Computational Theory</strong></article>
-          <article><h3>Higher Secondary Certificate — Science</h3><p>Mohipal Government College · 2020–2022</p><strong>GPA: 4.89 / 5.00</strong></article>
-          <article><h3>Achievement</h3><p><strong>Dean’s Award</strong></p></article>
-        </div>
+        <ul class="elsewhere mono">
+          <li><a href="https://www.linkedin.com/in/dip-bhattacharjee-212782354" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/dipjee678" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
+          <li><a href="cv.pdf" download>Curriculum vitae ↓</a></li>
+        </ul>
       </div>
     </section>
   </main>
 
-  <footer id="contact">
-    <div class="container contact-grid">
-      <div><p class="section-kicker">Get in touch</p><h2>Let’s collaborate on an AI/ML project.</h2><p>I am open to research collaboration, learning opportunities, and meaningful technical projects.</p></div>
-      <div class="contact-links">
-        <a href="mailto:dip.my.business@gmail.com"><i class="fa-solid fa-envelope"></i> dip.my.business@gmail.com</a>
-        <a href="https://dipjee678.github.io/2nd-Protfolio/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> dipjee678.github.io</a>
-        <a href="https://www.linkedin.com/in/dip-bhattacharjee-212782354" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-        <a href="https://www.facebook.com/bhattacharjee.dip.368588" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i> Facebook</a>
-      </div>
+  <footer class="colophon">
+    <div class="wrap colophon-inner mono">
+      <p>© <span class="js-year">2026</span> Dip Bhattacharjee</p>
+      <p>Set in Fraunces &amp; IBM Plex. Hand-built, no templates.</p>
+      <a href="#top">Back to title ↑</a>
     </div>
-    <div class="copyright">© <span id="year"></span> Dip Bhattacharjee. Built for AI/ML research and software projects.</div>
   </footer>
 
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('#nav-menu');
-    toggle.addEventListener('click', () => {
-      const open = menu.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open);
-      toggle.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
-    });
-    document.querySelectorAll('#nav-menu a').forEach(link => link.addEventListener('click', () => {
-      menu.classList.remove('open'); toggle.setAttribute('aria-expanded', false); toggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
-    }));
-    document.querySelector('#year').textContent = new Date().getFullYear();
-  </script>
+  <div class="toast mono" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
