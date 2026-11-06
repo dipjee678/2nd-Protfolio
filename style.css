@@ -416,6 +416,11 @@ figcaption b { color: var(--ink); font-weight: 600; }
 .spec dd { margin: 0; color: var(--ink-2); max-width: 62ch; }
 .spec dd.mono { font-size: 13.5px; color: var(--ink); }
 .proj > .link-btn { margin: 16px 0 0 48px; }
+.proj h3 a { text-decoration: none; background: linear-gradient(var(--accent), var(--accent)) 0 100% / 0 1.5px no-repeat; transition: background-size .35s var(--ease), color .2s; }
+.proj h3 a:hover { color: var(--accent); background-size: 100% 1.5px; }
+.proj-kicker { display: block; margin-top: 6px; font: italic 300 .62em/1.3 var(--serif); color: var(--ink-2); }
+.proj-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 0 48px; }
+.proj-featured .proj-no::after { content: " ★"; }
 .more { margin: 0; padding-top: 24px; border-top: 1px solid var(--rule); }
 .more a { font: 500 14px/1 var(--mono); text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 3px; transition: border-color .2s, color .2s; }
 .more a:hover { color: var(--accent); border-color: var(--accent); }
@@ -535,7 +540,7 @@ figcaption b { color: var(--ink); font-weight: 600; }
   .stats dl > div:nth-child(odd) { padding-left: 0; }
   .sec { padding: 72px 0; }
   .ref { grid-template-columns: 1fr; gap: 4px; }
-  .spec, .proj > .link-btn { margin-left: 0; }
+  .spec, .proj > .link-btn, .proj-links { margin-left: 0; }
   .spec > div { grid-template-columns: 1fr; gap: 2px; }
   .tools th, .tools td { display: block; width: auto; padding: 0; border: 0; }
   .tools th { padding-top: 14px; border-top: 1px solid var(--rule); }

@@ -131,7 +131,7 @@
           <p>In summary, I contribute:</p>
           <ol class="contrib">
             <li><strong>Research rigour.</strong> I take ideas through to peer-reviewed work, with three IEEE papers accepted in 2026.</li>
-            <li><strong>Engineering follow-through.</strong> I build systems people can use, from Java desktop applications to ML-enabled IoT hardware.</li>
+            <li><strong>Engineering follow-through.</strong> I build systems people can use, from a live multilingual AI CRM to ML-enabled IoT hardware and Java applications.</li>
             <li><strong>Clear teaching.</strong> As an instructor and tutor, I have learned to explain hard ideas simply, a skill that carries over directly to writing papers.</li>
           </ol>
         </div>
@@ -248,9 +248,25 @@
         </header>
 
         <div class="sec-body projects">
-          <article class="proj">
+          <article class="proj proj-featured">
             <div class="proj-head">
               <span class="proj-no mono">A.1</span>
+              <h3><a href="https://biai-crm-eight.vercel.app" target="_blank" rel="noopener noreferrer">LeadDesk</a> <span class="proj-kicker">AI enquiry CRM for Bangla, Banglish &amp; English</span></h3>
+            </div>
+            <dl class="spec">
+              <div><dt>Problem</dt><dd>Small businesses in Bangladesh receive enquiries on WhatsApp, Facebook, web forms and calls, in Bangla, Banglish or English. Leads get lost and follow-ups are missed.</dd></div>
+              <div><dt>Approach</dt><dd>Paste any message and an LLM extracts a structured lead (name, phone, company, need, questions) against a strict Zod schema, sorts it as sales, support, spam or job seeker, and drafts a reply in the customer’s own language, grounded only in the company’s facts. Around it: a drag-and-drop pipeline, 48-hour follow-up reminders, duplicate merging by phone number, an AI weekly summary, and a keyword fallback so the app still works with no API key.</dd></div>
+              <div><dt>Stack</dt><dd class="mono">JavaScript · Gemini API (structured outputs) · Zod · Vercel serverless</dd></div>
+            </dl>
+            <div class="proj-links">
+              <a class="link-btn" href="https://biai-crm-eight.vercel.app" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+              <a class="link-btn" href="https://github.com/dipjee678/LeadDesk-AI-enquiry-CRM-for-Bangla-Banglish-and-English" target="_blank" rel="noopener noreferrer">Source ↗</a>
+            </div>
+          </article>
+
+          <article class="proj">
+            <div class="proj-head">
+              <span class="proj-no mono">A.2</span>
               <h3>Hospital Management System</h3>
             </div>
             <dl class="spec">
@@ -262,7 +278,7 @@
 
           <article class="proj">
             <div class="proj-head">
-              <span class="proj-no mono">A.2</span>
+              <span class="proj-no mono">A.3</span>
               <h3>Poultry Farm Management System</h3>
             </div>
             <dl class="spec">
@@ -274,7 +290,7 @@
 
           <article class="proj">
             <div class="proj-head">
-              <span class="proj-no mono">A.3</span>
+              <span class="proj-no mono">A.4</span>
               <h3>Live Neural-Network Playground</h3>
             </div>
             <dl class="spec">
@@ -310,7 +326,8 @@
                 <tr><th scope="row">Vision &amp; XAI</th><td>Computer vision, medical image analysis, explainable AI</td></tr>
                 <tr><th scope="row">Statistics</th><td>Monte Carlo simulation, GARCH / EGARCH, bootstrap methods</td></tr>
                 <tr><th scope="row">Foundations</th><td>Data structures &amp; algorithms, graph theory, OOP, discrete mathematics</td></tr>
-                <tr><th scope="row">Systems</th><td>IoT sensing, cloud integration, databases</td></tr>
+                <tr><th scope="row">LLM applications</th><td>Google Gemini API, structured outputs with Zod schemas, prompt design, multilingual generation (Bangla, Banglish, English)</td></tr>
+                <tr><th scope="row">Systems</th><td>IoT sensing, cloud integration, serverless functions (Vercel), databases</td></tr>
                 <tr><th scope="row">Tools</th><td>Git &amp; GitHub, Adobe Photoshop, AutoCAD, Microsoft Office</td></tr>
                 <tr><th scope="row">Spoken languages</th><td>Bangla (native), English (fluent), Hindi (good listening, basic speaking)</td></tr>
               </tbody>
