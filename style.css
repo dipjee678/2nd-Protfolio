@@ -432,6 +432,14 @@ figcaption b { color: var(--ink); font-weight: 600; }
 .tools th { width: 200px; padding-right: 24px; font: italic 400 17px/1.5 var(--serif); color: var(--ink); }
 .tools td { color: var(--ink-2); }
 .tools tr { transition: background-color .2s; }
+.tools .tools-group td {
+  padding: 22px 0 8px;
+  font: 500 11.5px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--accent);
+}
+.tools tr.tools-group:first-child td { padding-top: 14px; }
+.tools tr.tools-group:hover td { background: transparent; }
+.tools tr.tools-group + tr th, .tools tr.tools-group + tr td { border-top: 0; }
 .tools tr:hover td, .tools tr:hover th { background: var(--paper-2); }
 
 /* ---------- background ---------- */
